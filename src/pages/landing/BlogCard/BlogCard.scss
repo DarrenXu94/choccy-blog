@@ -18,6 +18,13 @@
 .side-div {
     padding: 0px 15px 15px 15px;
     border-left: 3px solid rgb(154, 148, 148);
+    a {
+        text-decoration: none;
+        color: #84746a;
+        &:visited {
+            color: #84746a;
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {

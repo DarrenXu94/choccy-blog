@@ -4,6 +4,7 @@ import { StrapiAPI } from '../../services/StrapiAPI';
 import BlogCard from "./BlogCard/BlogCard";
 
 import "./Landing.scss";
+import Loader from '../../components/Loader';
 
 export default function Landing() {
     const [data, setdata] = useState<Blog[] | null>(null)
@@ -34,6 +35,10 @@ export default function Landing() {
                 </h1>
             </div>
             <div className="card-container" style={{ width: "80%", margin: "auto" }}>
+
+                {!data &&
+                    <div style={{ justifyContent: "center", display: "flex", paddingTop: "20px" }}><Loader /></div>
+                }
 
                 {data?.map(e => {
                     return <BlogCard key={e._id} data={e}>{e.Title}</BlogCard>
