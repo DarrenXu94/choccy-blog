@@ -28,11 +28,12 @@ export default function BlogCard({ data, ...children }: IProps) {
         // </div>
         <div className="padding-outer">
             <div className="padding-outer__div" style={{ display: "flex", backgroundColor: "white", width: "100%" }}>
-                <div style={{ backgroundImage: `url(${data.MediaURL})` }} className="side-img">
-                </div>
-                <div style={{ flex: 4, paddingLeft: "10px", paddingTop: "10px" }} className="side-div">
-                    <h5> {data.Title} </h5>
+                <Link to={`/blog/${data._id}`} style={{ backgroundImage: `url(${data.MediaURL})` }} className="side-img">
+                </Link>
+                <div style={{ flex: 4 }} className="side-div">
+                    <h2> {data.Title} </h2>
                     <p>{data.Content}</p>
+                    <Link to={`/blog/${data._id}`}>See more</Link>
                 </div>
             </div>
 

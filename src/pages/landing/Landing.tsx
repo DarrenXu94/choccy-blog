@@ -20,8 +20,18 @@ export default function Landing() {
 
     return (
         <div >
-            <div className="heading" style={{ padding: "30px", fontSize: "40px", textAlign: "center" }}>
-                Choccy ratings with Daz
+            <div className="heading" style={{
+                padding: "30px",
+                textAlign: "center",
+                backgroundImage: `url(https://images.pexels.com/photos/2067420/pexels-photo-2067420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)`,
+                backgroundPosition: "center",
+
+
+            }}>
+                <h1>
+
+                    Choccy ratings with Daz
+                </h1>
             </div>
             <div className="card-container" style={{ width: "80%", margin: "auto" }}>
 

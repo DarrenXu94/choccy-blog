@@ -2,13 +2,22 @@
     padding: 15px;
 
     &__div {
+        box-shadow: 0 16px 31px -17px #888886;
         flex-direction: row;
+        border-radius: 10px;
     }
 }
 
 .side-img {
     flex: 1;
     background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.side-div {
+    padding: 0px 15px 15px 15px;
+    border-left: 3px solid rgb(154, 148, 148);
 }
 
 @media screen and (max-width: 600px) {
@@ -23,5 +32,9 @@
         flex: unset;
         height: 50px;
         background-size: contain;
+    }
+
+    .side-div {
+        border-left: none;
     }
 }

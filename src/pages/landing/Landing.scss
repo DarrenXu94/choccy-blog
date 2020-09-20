@@ -1,4 +1,17 @@
+.heading {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+}
+
 @media screen and (max-width: 600px) {
+    .heading {
+        height: 100px !important;
+        font-size: 1.2rem;
+    }
     .card-container {
         min-width: 100%;
     }
