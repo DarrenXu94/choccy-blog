@@ -12,12 +12,22 @@
     flex: 1;
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
+    // border-radius: 10px;
+    border-top-left-radius: 10px;
+    // border-top-right-radius: 1em 3em;
+    // border-bottom-right-radius: 4em 0.5em;
+    border-bottom-left-radius: 10px;
 }
 
 .side-div {
     padding: 0px 15px 15px 15px;
     border-left: 3px solid rgb(154, 148, 148);
+    h2 {
+        margin-bottom: 0px;
+    }
+    p {
+        margin-top: 0px;
+    }
     a {
         text-decoration: none;
         color: #84746a;
